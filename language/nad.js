@@ -1,5 +1,5 @@
 exports.wait = () => {
-	return`*「❗」WAIT GANS*`
+	return`*「❗」WAIT KAK*`
 }
 
 exports.succes = () => {
@@ -7,11 +7,11 @@ exports.succes = () => {
 }
 
 exports.lvlon = () => {
-	return`*「❗」ENABLE LEVELING*`
+	return`*「❗」LEVELING ENABLE*`
 }
 
 exports.lvloff = () => {
-	return`*「❗」DISABLE LEVELING*`
+	return`*「❗」LEVELING DISABLE*`
 }
 
 exports.lvlnul = () => {
@@ -23,23 +23,40 @@ exports.lvlnoon = () => {
 }
 
 exports.noregis = () => {
-	return`*「❗」BELUM DAFTAR*\n*cara daftar ${prefix}daftar nama|umur* \n\n*contoh ${prefix}daftar ramlan|18*`
+	return`*「❗」BELUM VERIFIKASI「❗」*\n\nketik : @verify`
 }
 
 exports.baned = () => {
 	return`*「❗」SORRY SORRY AJA NIH BRO, TAPI KAU SUDAH KU BANNED YAHAHAHA HAYUUU :V*`
 }
 
-exports.premium = () => {
-	return`*「❗」Maaf Kamu Bukan User Premium ! hubungi owner untuk jadi premium ketik ${prefix}owner*`
+exports.premadd = (alan) => {
+	return`「 SUKSES 」
+Berhasil Menambahkan User Premium!
+
+\`\`\`➸ Nama : ${alan}\`\`\`
+\`\`\`➸ Expired : 30 DAY\`\`\`
+
+\`\`\`Terimakasih kak\`\`\`
+`
+}
+
+exports.dellprem = (nadia) => {
+	return`「 SUKSES 」
+Berhasil Menghapus User Premium!
+
+\`\`\`➸ Nama : ${nadia}\`\`\`
+
+\`\`\`Jangan Lupa Upgrade Premium Lagi Kak\`\`\`
+`
 }
 
 exports.rediregis = () => {
-	return`*「 SUDAH DAFTAR 」*\n\n*kamu sudah terdaftar kak >_<*`
+	return`*Kamu sudah melakukan verify -_-*`
 }
 
 exports.stikga = () => {
-	return`*「 GAGAL 」Coba Reply ulang kak*`
+	return`*「 GAGAL 」Coba reply/tag ulang kak*`
 }
 
 exports.linkga = () => {
@@ -66,62 +83,53 @@ exports.badmin = () => {
 	return`*「❗」BOT HARUS JADI ADMIN*`
 }
 
-exports.nsfwoff = () => {
-	return`*「❗」NSFW GAK AKTIF*`
-}
-
 exports.bug = () => {
 	return`*Masalah telah di laporkan ke owner BOT, laporan palsu/main2 tidak akan ditanggapi*`
 }
 
 exports.wrongf = () => {
-	return`*「🤔」Teks nya mana kak?*`
+	return`*「🗿」Teks nya mana kak?*`
 }
 
 exports.clears = () => {
-	return`*「🚮」Clear all Success*`
+	return`*Sukses bosku*`
 }
 
-exports.pc = () => {
-	return`*「❗」REGISTRASI*\n\nuntuk mengetahui apa kamu sudah terdaftar silahkah check message yang saya kirim \n\nNOTE:\n*jika kamu belum mendapatkan pesan. berarti kamu belum menyimpan nomer bot*`
-}
-
-exports.registered = (namaUser, umurUser, serialUser, time, sender, botName) => {
-	return`*「 REGISTRASI BERHASIL 」*\nUntuk User Info :\n\n*➸ Nama : ${namaUser}*\n*➸ Nomor : wa.me/${sender.split("@")[0]}*\n*➸ Umur : ${umurUser}*\n*➸ Waktu Pendaftaran : ${time}*\n\n*「SN」: ${serialUser}*\n_NOTE : Pesan ini sangat penting :v_`
-}
-
-exports.cmdnf = (prefix, command) => {
-	return`command *${prefix}${command}* tidak di temukan\coba tulis *${prefix}menu*`
-}
-
-exports.owneresce = (pushname) => {
-	return`*maaf tapi ${pushname} bukan owner script*`
-}
 exports.levelup = (pushname, sender, getLevelingXp,  getLevel, getLevelingLevel) => {
 	return`
 *「 SELAMAT 」*
-➸ *Nama* : ${pushname}
-➸ *Nomor* : wa.me/${sender.split("@")[0]}
-➸ *Xp* : ${getLevelingXp(sender)}
-➸ *Level* : ${getLevel} ➸ ${getLevelingLevel(sender)}
+\`\`\`➸ *Nama* : ${pushname}\`\`\`
+\`\`\`➸ *Nomor* : wa.me/${sender.split("@")[0]}\`\`\`
+\`\`\`➸ *Xp* : ${getLevelingXp(sender)}\`\`\`
+\`\`\`➸ *Level* : ${getLevel} ➸ ${getLevelingLevel(sender)}\`\`\`
 `}
  
-exports.limitend = (pushname) => {
-	return`*maaf ${pushname} limit hari ini habis*\n*limit di reset setiap jam 24:00*`
+exports.limitend = (pushname, prefix) => {
+	return`*maaf ${pushname} limit hari ini habis*
+*Limit di reset setiap jam 24:00*
+
+\`\`\`Upgrade Premium Bebas Limit\`\`\`
+\`\`\`➸ 20K : 1 Bulan\`\`\`
+\`\`\`Jika berminat silahkan hubungi owner\`\`\`
+\`\`\`Kirim perintah : ${prefix}owner\`\`\`
+`
 }
 
-exports.limitcount = (Prema, limitCounts) => {
+exports.limitcount = (isPrem, limitCounts) => {
 	return`
 *「 LIMIT COUNT 」*
-sisa limit anda : ${Prema ? '9999' : `${limitCounts}`}
+sisa limit anda : ${isPrem ? '9999' : `${limitCounts}`}
 
 Upgrade premium bosku, biar bebas gunain bot`
 }
 
-exports.satukos = () => {
-	return`*Tambah parameter 1/enable atau 0/disable`
-}
 
 exports.uangkau = (pushname, sender, uangkau) => {
-	return`┏━━━━━━━♡ *ATM* ♡━━━━━━━┓\n┃╭───────────────────\n┃│➸ NAMA : ${pushname}\n┃│➸ NOMOR : ${sender.split("@")[0]}\n┃│➸ UANG : ${uangkau}\n┃╰───────────────────\n┗━━━━━━━━━━━━━━━━━━━━┛`
+	return`┏━━━━━━━♡ *ATM* ♡━━━━━━━┓
+┃╭───────────────────
+┃│➸ NAMA : ${pushname}
+┃│➸ NOMOR : ${sender.split("@")[0]}
+┃│➸ UANG : ${uangkau}
+┃╰───────────────────
+┗━━━━━━━━━━━━━━━━━━━━┛`
 }
