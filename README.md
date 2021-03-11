@@ -50,7 +50,7 @@ Siapin alat dan bahannya.
 ```bash
 > kalo lu belum punya apk termux, download di playstore
 > masuk ke apk termux lalu ketik dibawah ini!
-> termux-setup-storage [`Lalu Ijinkan`]
+> termux-setup-storage [ Lalu Ijinkan ]
 > apt-get update -y
 > apt-get upgrade -y
 > pkg install git -y
