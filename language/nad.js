@@ -30,25 +30,11 @@ exports.baned = () => {
 	return`*「❗」SORRY SORRY AJA NIH BRO, TAPI KAU SUDAH KU BANNED YAHAHAHA HAYUUU :V*`
 }
 
-exports.premadd = (alan) => {
-	return`「 SUKSES 」
-Berhasil Menambahkan User Premium!
-
-\`\`\`➸ Nama : ${alan}\`\`\`
-\`\`\`➸ Expired : 30 DAY\`\`\`
-
-\`\`\`Terimakasih kak\`\`\`
-`
-}
-
-exports.dellprem = (nadia) => {
-	return`「 SUKSES 」
-Berhasil Menghapus User Premium!
-
-\`\`\`➸ Nama : ${nadia}\`\`\`
-
-\`\`\`Jangan Lupa Upgrade Premium Lagi Kak\`\`\`
-`
+exports.premium = (prefix) => {
+	return`Lu Siapa? Fitur ini khusus user premium!
+Upgrade ke premium dulu bosku
+Jika minat hubungi owner ku
+Ketik : ${prefix}owner`
 }
 
 exports.rediregis = () => {
