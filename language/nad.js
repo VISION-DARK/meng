@@ -84,10 +84,10 @@ exports.clears = () => {
 exports.levelup = (pushname, sender, getLevelingXp,  getLevel, getLevelingLevel) => {
 	return`
 *「 SELAMAT 」*
-\`\`\`➸ *Nama* : ${pushname}\`\`\`
-\`\`\`➸ *Nomor* : wa.me/${sender.split("@")[0]}\`\`\`
-\`\`\`➸ *Xp* : ${getLevelingXp(sender)}\`\`\`
-\`\`\`➸ *Level* : ${getLevel} ➸ ${getLevelingLevel(sender)}\`\`\`
+\`\`\`➸ Nama : ${pushname}\`\`\`
+\`\`\`➸ Nomor : wa.me/${sender.split("@")[0]}\`\`\`
+\`\`\`➸ Xp : ${getLevelingXp(sender)}\`\`\`
+\`\`\`➸ Level : ${getLevel} ➸ ${getLevelingLevel(sender)}\`\`\`
 `}
  
 exports.limitend = (pushname, prefix) => {
