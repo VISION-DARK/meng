@@ -22,6 +22,10 @@ exports.lvlnoon = () => {
 	return`*「❗」LEVEL DI GRUB BELUM DI AKTIFKAN*`
 }
 
+exports.nsfwoff = () => {
+	return`*「❗」NSFW BELUM DI AKTIFKAN*`
+}
+
 exports.noregis = () => {
 	return`*「❗」BELUM VERIFIKASI「❗」*\n\nketik : @verify`
 }
