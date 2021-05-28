@@ -31,7 +31,7 @@ exports.noregis = () => {
 }
 
 exports.baned = () => {
-	return`*「❗」SORRY SORRY AJA NIH BRO, TAPI KAU SUDAH KU BANNED YAHAHAHA HAYUUU :V*`
+	return`*「❗」SORRY SORRY AJA NIH BRO, TAPI KAU GAY JD GA BISA MAKE BOT INI :V*`
 }
 
 exports.premium = (prefix) => {
@@ -58,7 +58,7 @@ exports.groupo = () => {
 }
 
 exports.ownerb = () => {
-	return`*「❗」OWNER BOT ONLY*`
+	return`*「❗」KAO GAY JD G BISA MAKE FITUR INI*`
 }
 
 exports.ownerg = () => {
@@ -99,7 +99,7 @@ exports.limitend = (pushname, prefix) => {
 *Limit di reset setiap jam 24:00*
 
 \`\`\`Upgrade Premium Bebas Limit\`\`\`
-\`\`\`➸ 20K : 1 Bulan\`\`\`
+\`\`\`➸ 1M SPINA : 1 Bulan\`\`\`
 \`\`\`Jika berminat silahkan hubungi owner\`\`\`
 \`\`\`Kirim perintah : ${prefix}owner\`\`\`
 `
@@ -114,7 +114,7 @@ Upgrade premium bosku, biar bebas gunain bot`
 }
 
 exports.uangkau = (pushname, sender, uangkau) => {
-	return`┏━━━━━━━♡ *ATM* ♡━━━━━━━┓
+	return`┏━━━━━━━♡ *F BOT* ♡━━━━━━━┓
 ┃╭───────────────────
 ┃│➸ NAMA : ${pushname}
 ┃│➸ NOMOR : ${sender.split("@")[0]}
@@ -125,10 +125,8 @@ exports.uangkau = (pushname, sender, uangkau) => {
 
 exports.donasi = () => {
 return`*DONASI KAK*
-Pulsa : 0812-1444-1027
-Gopay : 0855-5924-0360
-Dana : 0855-5924-0360
-Saweria : https://saweria.co/ramlangans
+Pulsa : 0895618376962
+Dana : 0895618376962
 
 Donasi supaya bot terus update & Aktif`
 }
@@ -137,8 +135,8 @@ exports.iklan = (botName, ownerNumbers, ownerName) => {
 return`🔰 -----[ 「 *IKLAN ${botName}* 」 ]----- 🔰
 ──────────────────────────────
 ◯ *DAFTAR SEWA & BUAT BOT :*
-◯ *SEWA : 25K/GRUP (BULAN)*
-◯ *BUAT : 100K (BISA JADI OWNER)*
+◯ *SEWA : 15K/GRUP (BULAN)*
+◯ *BUAT : 40K (BISA JADI OWNER)*
 ◯ *PEMBAYARAN BISA MELALUI :*
 ◯ *OVO, GOPAY, DANA, PULSA+10K*
 ──────────────────────────────
