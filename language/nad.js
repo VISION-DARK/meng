@@ -1,5 +1,5 @@
 exports.wait = () => {
-	return`*「❗」WAIT KAK*`
+	return`*「❗」WAIT SEDANG DI PROSES KAK*`
 }
 
 exports.succes = () => {
@@ -36,7 +36,7 @@ exports.baned = () => {
 
 exports.premium = (prefix) => {
 	return`Lu Siapa? Fitur ini khusus user premium!
-Upgrade ke premium dulu bosku
+Silahkan uppgrade ke premium terlebih dahulu
 Jika minat hubungi owner ku
 Ketik : ${prefix}owner`
 }
@@ -82,7 +82,7 @@ exports.wrongf = () => {
 }
 
 exports.clears = () => {
-	return`*Sukses bosku*`
+	return`*Siip udh rul*`
 }
 
 exports.levelup = (pushname, sender, getLevelingXp,  getLevel, getLevelingLevel) => {
@@ -99,7 +99,7 @@ exports.limitend = (pushname, prefix) => {
 *Limit di reset setiap jam 24:00*
 
 \`\`\`Upgrade Premium Bebas Limit\`\`\`
-\`\`\`➸ 1M SPINA : 1 Bulan\`\`\`
+\`\`\`➸ 10k/bulan \`\`\`
 \`\`\`Jika berminat silahkan hubungi owner\`\`\`
 \`\`\`Kirim perintah : ${prefix}owner\`\`\`
 `
@@ -114,7 +114,7 @@ Upgrade premium bosku, biar bebas gunain bot`
 }
 
 exports.uangkau = (pushname, sender, uangkau) => {
-	return`┏━━━━━━━♡ *F BOT* ♡━━━━━━━┓
+	return`┏━━━━━━━ *F BOT* ━━━━━━━┓
 ┃╭───────────────────
 ┃│➸ NAMA : ${pushname}
 ┃│➸ NOMOR : ${sender.split("@")[0]}
